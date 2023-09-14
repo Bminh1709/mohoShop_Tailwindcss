@@ -1,0 +1,27 @@
+html {
+    background-color: #F8F1F5;
+}
+body {
+    font-family: 'League Spartan', sans-serif;
+}
+.banner {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 60%), rgb(255 255 255 / 4%)), url(/assets/banner.jpg);
+    background-size: cover;
+}
+.vision__img {
+    height: 650px;
+    width: 650px;
+    object-fit: cover;
+}
+@media (max-height: 650px) { 
+    .vision__img {
+        height: 500px;
+        width: 500px;
+    }
+}
+@media (max-height: 500px) { 
+    .vision__img {
+        height: 370px;
+        width: 370px;
+    }
+}
