@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moho.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="border-t border-black py-1 bg-white">
+        <div class="text-5xl text-MydarkYellow font-bold pt-2 mx-auto w-fit">moho<span class="text-black">.</span></div>
+    </div>
+
+    <div class="access-background h-screen flex justify-end items-center overflow-hidden relative">
+        <input hidden type="checkbox" name="" id="ckbChangeForm" class="">
+
+        <div hidden class="signup-container bg-white grid grid-cols-1 w-full sm:w-[400px] h-fit p-8 sm:mr-[15%] translate-x-full absolute opacity-0">
+            <div class="text-2xl mb-3 font-medium text-MydarkYellow">Đăng ký</div>
+            <div class="">
+                <div><input class="border border-gray-300 p-2 my-1 w-full focus:border-MydarkYellow focus:outline-none" type="text" placeholder="Tên đầy đủ"></div>
+                <div><input class="border border-gray-300 p-2 my-1 w-full focus:border-MydarkYellow focus:outline-none" type="text" placeholder="Tài khoản gmail"></div>
+                <div><input class="border border-gray-300 p-2 my-1 w-full focus:border-MydarkYellow focus:outline-none" type="text" placeholder="Số điện thoại"></div>
+                <div class="relative"><input class="border border-gray-300 p-2 my-1 w-full focus:border-MydarkYellow focus:outline-none" type="text" placeholder="Mật khẩu"><i class="fa-regular fa-eye absolute right-3 top-4 text-gray-500 hover:text-black"></i></div>
+                <div><input class="p-2 my-1 bg-MypaleYellow w-full text-white hover:bg-MyPink hover:text-black hover:cursor-pointer text-base" type="submit" value="Đăng ký"></div>
+            </div>
+            <div class="flex justify-center items-center mt-6 mb-2">
+                <div class="w-full h-[1px] bg-gray-200"></div>
+                <div class="text-gray-600 mx-2">Hoặc</div>
+                <div class="w-full h-[1px] bg-gray-200"></div>
+            </div>
+            <div class="flex gap-3">
+                <div class="border border-gray-300 p-2 w-full flex justify-center hover:bg-MyPink hover:cursor-pointer">
+                    <a class="flex gap-1" href="">
+                        <img class="w-5 h-fit" src="/Assets/Facebook-logo.png" alt="">
+                        <p>Facebook</p>
+                    </a>
+                </div>
+                <div class="border border-gray-300 p-2 w-full flex justify-center hover:bg-MyPink hover:cursor-pointer">
+                    <a class="flex gap-1" href="">
+                        <img class="w-5 h-fit" src="/Assets/google-icon.png" alt="">
+                        <p>Google</p>
+                    </a>
+                </div>
+            </div>
+            <div class="text-sm text-gray-500 mx-auto mt-3">Bạn là người bạn cũ của moho? <label class="text-base text-blue-600 font-medium hover:cursor-pointer" for="ckbChangeForm" href="">Đăng nhập</label></div>
+        </div>
+
+        <div class="signin-container custom-boxShadow bg-white grid grid-cols-1 w-full sm:w-[400px] h-fit p-8 mx-auto absolute sm:mr-[15%] opacity-100">
+            <div class="text-2xl mb-3 font-medium text-MydarkYellow">Đăng nhập</div>
+            <div class="">
+                <div><input class="border border-gray-300 p-2 my-1 w-full focus:border-MydarkYellow focus:outline-none" type="text" placeholder="Gmail/Số điện thoại"></div>
+                <div class="relative"><input class="border border-gray-300 p-2 my-1 w-full focus:border-MydarkYellow focus:outline-none" type="text" placeholder="Mật khẩu"><i class="fa-regular fa-eye absolute right-3 top-4 text-gray-500 hover:text-black"></i></div>
+                <div><input class="p-2 my-1 bg-MypaleYellow w-full text-white hover:bg-MyPink hover:text-black hover:cursor-pointer text-base" type="submit" value="Đăng nhập"></div>
+            </div>
+            <div class="flex justify-center items-center mt-6 mb-2">
+                <div class="w-full h-[1px] bg-gray-200"></div>
+                <div class="text-gray-600 mx-2">Hoặc</div>
+                <div class="w-full h-[1px] bg-gray-200"></div>
+            </div>
+            <div class="flex gap-3">
+                <div class="border border-gray-300 p-2 w-full flex justify-center hover:bg-MyPink hover:cursor-pointer">
+                    <a class="flex gap-1" href="">
+                        <img class="w-5 h-fit" src="/Assets/Facebook-logo.png" alt="">
+                        <p>Facebook</p>
+                    </a>
+                </div>
+                <div class="border border-gray-300 p-2 w-full flex justify-center hover:bg-MyPink hover:cursor-pointer">
+                    <a class="flex gap-1" href="">
+                        <img class="w-5 h-fit" src="/Assets/google-icon.png" alt="">
+                        <p>Google</p>
+                    </a>
+                </div>
+            </div>
+            <div class="text-sm text-gray-500 mx-auto mt-3">Bạn là người đồng hành mới của moho? <label class="text-base text-blue-600 font-medium hover:cursor-pointer" for="ckbChangeForm" href="">Đăng ký</label></div>
+        </div>
+    </div>
+</body>
+</html>

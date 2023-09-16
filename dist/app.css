@@ -13,6 +13,22 @@ body {
     width: 650px;
     object-fit: cover;
 }
+.access-background {
+    background: linear-gradient(to left, rgba(0, 0, 0, 60%), rgb(255 255 255 / 4%)), url(/assets/white-girl.jpg);
+    background-size: cover;
+}
+#ckbChangeForm:checked ~ .signup-container {
+    transform: translateX(0);
+    opacity: 1;
+}
+#ckbChangeForm:checked ~ .signin-container {
+    transform: translateX(100%);
+    opacity: 0;
+    margin-right: 0;
+}
+
+
+
 @media (max-height: 650px) { 
     .vision__img {
         height: 500px;
