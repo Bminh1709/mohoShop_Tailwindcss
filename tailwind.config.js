@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         MydarkYellow: "#ef9b0f",
         MypaleYellow: "#F5B03D",
+        MypalePink: "#F8F1F5",
         MyPink: "#F8EBF3",
         MydarkPink: "#947173",
       },

@@ -1,12 +1,19 @@
-html {
-    background-color: #F8F1F5;
-}
+
 body {
     font-family: 'League Spartan', sans-serif;
 }
 .banner {
     background: linear-gradient(to bottom right, rgba(0, 0, 0, 60%), rgb(255 255 255 / 4%)), url(/assets/banner.jpg);
     background-size: cover;
+}
+#mobile-navbar:checked ~ .nav__overlay {
+    display: block;
+}
+.responsive-navbar {
+    transition: transform 0.3s ease;
+}
+#mobile-navbar:checked ~ .responsive-navbar {
+    transform: translateX(0);
 }
 .vision__img {
     height: 650px;
@@ -26,9 +33,9 @@ body {
     opacity: 0;
     margin-right: 0;
 }
-
-
-
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
 @media (max-height: 650px) { 
     .vision__img {
         height: 500px;
