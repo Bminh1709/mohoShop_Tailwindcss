@@ -35,7 +35,16 @@ body {
 }
 .dropdown:hover .dropdown-menu {
     display: block;
-  }
+}
+.tab-content {
+    display: none;
+    padding: 15px;
+}
+
+/* Style for the active tab button and content */
+.active {
+    display: block;
+}
 @media (max-height: 650px) { 
     .vision__img {
         height: 500px;
