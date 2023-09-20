@@ -68,7 +68,7 @@
     </div>
 
 
-    <div class="w-11/12 lg:w-4/5 mx-auto">
+    <div class="w-11/12 xl:w-4/5 mx-auto">
         <div class="flex items-center gap-2 text-xs text-gray-600">
             <a href="">Trang chủ</a>
             <i class="fa-solid fa-angle-right"></i>
@@ -76,30 +76,32 @@
             <i class="fa-solid fa-angle-right"></i>
             <a href="" class="last:text-black font-medium">Bông tẩy trang CottonPads</a>
         </div>
+    </div>
 
-        <div class="w-full h-fit bg-white mt-4 p-5 flex gap-5">
-            <div class="w-fit">
-                <img src="/assets/bttLameila.png" alt="" class="h-[450px] min-w-[450px] object-cover">
-                <div class="flex gap-2 mt-4 relative">
-                    <div class="absolute bg-gray-300 h-10 w-6 flex items-center justify-center top-5 opacity-70 hover:opacity-100 hover:cursor-pointer">
+    <div class="w-11/12 xl:w-4/5 mx-auto bg-white mt-4 p-5">
+        <div class="w-full h-fit flex flex-col sm:flex-row gap-5">
+            <div class="w-full sm:min-w-[250px] md:min-w-[350px] lg:min-w-[450px]">
+                <img src="/assets/bttLameila.png" alt="" class="h-full sm:h-[250px] md:h-[350px] lg:h-[450px] object-cover">
+                <div class="flex gap-2 mt-4 relative overflow-scroll">
+                    <div class="absolute bg-gray-300 h-7 w-5 md:h-10 md:w-6 flex items-center justify-center top-5 opacity-70 hover:opacity-100 hover:cursor-pointer">
                         <i class="fa-solid fa-angle-left"></i>
                     </div>
-                    <img src="/assets/bttLameila.png" alt="" class="w-20 h-20">
-                    <img src="/assets/bttLameila.png" alt="" class="w-20 h-20">
-                    <img src="/assets/bttLameila.png" alt="" class="w-20 h-20">
-                    <div class="absolute right-0 bg-gray-300 h-10 w-6 flex items-center justify-center top-5 opacity-70 hover:opacity-100 hover:cursor-pointer">
+                    <img src="/assets/bttLameila.png" alt="" class="w-16 h-16 md:w-20 md:h-20">
+                    <img src="/assets/bttLameila.png" alt="" class="w-16 h-16 md:w-20 md:h-20">
+                    <img src="/assets/bttLameila.png" alt="" class="w-16 h-16 md:w-20 md:h-20">
+                    <div class="absolute right-0 bg-gray-300 h-7 w-5 md:h-10 md:w-6 flex items-center justify-center top-5 opacity-70 hover:opacity-100 hover:cursor-pointer">
                         <i class="fa-solid fa-angle-right"></i>
                     </div>
                 </div>
-                <div class="flex justify-evenly py-4 border-y border-gray-200 mt-4">
-                    <div class="flex gap-1 items-center">
+                <div class="flex flex-col md:flex-row justify-evenly py-4 border-y border-gray-200 mt-4">
+                    <div class="flex gap-1 items-center mx-auto md:mx-0">
                         <p class="text-gray-500 text-sm">Chia sẽ:</p>
                         <a href=""><img class="w-6 h-6" src="/assets/Facebook-logo.png" alt=""></a>
                         <a href=""><img class="w-6 h-6" src="/assets/google-icon.png" alt=""></a>
                         <a href=""><img class="w-6 h-6" src="/assets/mailLogo.png" alt=""></a>
                     </div>
-                    <div class="h-7 w-0.5 bg-gray-200"></div>
-                    <div class="flex gap-1 text-sm items-center">
+                    <div class="h-0.5 w-full md:h-7 md:w-0.5 bg-gray-100 mx-auto md:mx-0 my-3 md:my-0"></div>
+                    <div class="flex gap-1 text-sm items-center mx-auto md:mx-0">
                         <p class="text-gray-500">Lượt xem:</p>
                         <p>1130 người</p>
                     </div>
@@ -130,8 +132,28 @@
                     </div>
                 </div>
                 <div class="flex gap-2">
-                    <button class="border border-MydarkYellow py-3 px-5 hover:bg-MydarkYellow hover:text-white">Thêm vào giỏ hàng</button>
-                    <button class="bg-MydarkYellow text-white py-3 px-7 hover:border border-MydarkYellow hover:bg-white hover:text-black">Mua hàng</button>
+                    <button class="border border-MydarkYellow py-3 px-3 lg:px-5 hover:bg-MypaleYellow hover:text-white">Thêm vào giỏ hàng</button>
+                    <button class="bg-MydarkYellow text-white py-3 px-4 lg:px-7 hover:border border-MydarkYellow hover:bg-white hover:text-black">Mua hàng</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="w-full mt-10">
+            <div class="border-b border-gray-300 flex flex-col sm:flex-row">
+                <button class="py-2 px-5 text-base" onclick="showTab('info')" id="product-info">Thông tin sản phẩm</button>
+                <button class="py-2 px-5 text-base" onclick="showTab('guide')" id="product-guide">Hướng dẫn mua hàng</button>
+                <button class="py-2 px-5 text-base" onclick="showTab('policy')" id="product-policy">Chính sách</button>
+            </div>
+            <div>
+                <div class="tab-content" id="info">
+                    Bui Minh
+                </div>
+                <div class="tab-content" id="guide">
+                    nHAT THANH
+                </div>
+                <div class="tab-content" id="policy">
+                    nFUYEN THU
                 </div>
             </div>
         </div>
@@ -175,4 +197,5 @@
 
 </div>
 </body>
+<script src="main.js"></script>
 </html>
