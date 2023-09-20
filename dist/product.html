@@ -13,27 +13,37 @@
 </head>
 <body>
 
-    <div class="bg-MypalePink mb-7">
+    <div class="bg-MydarkPink mb-7">
 
         <div class="justify-center hidden lg:flex border-b border-gray-300">
             <ul class="flex items-center text-lg">
-                <li><a><button class="py-3 px-10 hover:bg-white">Khăn ướt</button></a></li>
-                <li><a><button class="py-3 px-10 hover:bg-white">Khăn đa năng</button></a></li>
-                <li><a><button class="py-3 px-10 hover:bg-white">Bông tẩy trang</button></a></li>
-                <li><a><button class="py-3 px-10 hover:bg-white">Sản phẩm len</button></a></li>
-                <li><a><button class="py-3 px-10 hover:bg-white">Khẩu trang</button></a></li>
+                <li><a><button class="py-3 px-10 hover:bg-MypalePink">Khăn ướt</button></a></li>
+                <li><a><button class="py-3 px-10 hover:bg-MypalePink">Khăn đa năng</button></a></li>
+                <li><a><button class="py-3 px-10 hover:bg-MypalePink">Bông tẩy trang</button></a></li>
+                <li><a><button class="py-3 px-10 hover:bg-MypalePink">Sản phẩm len</button></a></li>
+                <li><a><button class="py-3 px-10 hover:bg-MypalePink">Khẩu trang</button></a></li>
             </ul>
         </div>
 
-        <div class="flex mx-auto justify-around items-center w-3/4 py-2 gap-16">
+        <div class="flex lg:hidden justify-between items-center border-b border-gray-300 w-11/12 mx-auto">
+            <label for="mobile-navbar" class="w-16"><i class="fa-solid fa-bars text-xl hover:cursor-pointer"></i></label>
             <div class="text-5xl text-MydarkYellow font-bold pt-2">moho<span class="text-black">.</span></div>
+            <div class="flex gap-2">
+                <a href=""><i class="fa-solid fa-bag-shopping text-base hover:text-MydarkYellow"></i></a>
+                <a href=""><i class="fa-solid fa-heart text-base hover:text-MydarkYellow"></i></a>
+                <a href=""><i class="fa-solid fa-user text-base hover:text-MydarkYellow"></i></a>
+            </div>
+        </div>
+
+        <div class="flex mx-auto justify-around items-center w-3/4 py-3 lg:py-2 gap-16">
+            <div class="hidden lg:block text-5xl text-MydarkYellow font-bold pt-2">moho<span class="text-black">.</span></div>
             <div class="w-full md:w-4/5 relative">
                 <input class="w-full outline-none py-2 px-4 rounded-sm" type="text">
                 <div class="absolute top-0 right-0 h-full w-14 lg:w-20 border-4 border-white bg-MyPink flex justify-center items-center hover:cursor-pointer hover:bg-MydarkYellow">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
-            <div class="flex gap-2">
+            <div class="hidden lg:flex gap-2">
                 <a href=""><i class="fa-solid fa-bag-shopping text-base hover:text-MydarkYellow"></i></a>
                 <a href=""><i class="fa-solid fa-heart text-base hover:text-MydarkYellow"></i></a>
                 <a href=""><i class="fa-solid fa-user text-base hover:text-MydarkYellow"></i></a>
@@ -42,31 +52,45 @@
 
     </div>
 
+    <div class="z-10">
+        <input hidden type="checkbox" id="mobile-navbar" class="">
+
+        <div class="responsive-navbar fixed top-0 left-0 right-0 bottom-0 z-10 bg-white w-fit p-8 translate-x-[-100%] flex flex-col z-20">
+            <label for="mobile-navbar" class=""><i class="fa-solid fa-xmark text-3xl text-red-600 mb-4 hover:cursor-pointer"></i></label>
+            <a class="text-lg py-4 pl-4 pr-24 border-b-[2px] border-gray-100 hover:bg-MyPink hover:cursor-pointer">Bông tẩy trang</a>
+            <a class="text-lg py-4 pl-4 pr-24 border-b-[2px] border-gray-100 hover:bg-MyPink hover:cursor-pointer">Khăn đa năng</a>
+            <a class="text-lg py-4 pl-4 pr-24 border-b-[2px] border-gray-100 hover:bg-MyPink hover:cursor-pointer">Khăn ướt</a>
+            <a class="text-lg py-4 pl-4 pr-24 border-b-[2px] border-gray-100 hover:bg-MyPink hover:cursor-pointer">Khẩu trang</a>
+            <a class="text-lg py-4 pl-4 pr-24 border-b-[2px] border-gray-100 hover:bg-MyPink hover:cursor-pointer">Sản phẩm len</a>
+        </div>
+        <label hidden for="mobile-navbar" class="bg-gray-600 opacity-50 fixed top-0 left-0 right-0 bottom-0 nav__overlay z-10"></label>
+    </div>
+
     <div class="w-11/12 lg:w-4/5 mx-auto flex gap-7 pb-32">
 
         <div class="hidden lg:block w-1/5">
             <div class="p-5 shadow-lg mb-7">
                 <p class="w-fit mx-auto text-base font-semibold mb-3">Danh mục</p>
-                <div class="w-full flex justify-between items-center py-3 border-b">
-                    <a class="hover:underline text-sm" href="">Sản phẩm len</a>
+                <a class="w-full flex justify-between items-center py-3 border-b" href="www">
+                    <p class="hover:underline text-sm">Khăn giấy ướt</p>
                     <i class="fa-solid fa-angle-right"></i>
-                </div>
-                <div class="w-full flex justify-between items-center py-3 border-b">
-                    <a class="hover:underline text-sm" href="">Sản phẩm len</a>
+                </a>
+                <a class="w-full flex justify-between items-center py-3 border-b" href="www">
+                    <p class="hover:underline text-sm">Khăn đa năng</p>
                     <i class="fa-solid fa-angle-right"></i>
-                </div>
-                <div class="w-full flex justify-between items-center py-3 border-b">
-                    <a class="hover:underline text-sm" href="">Sản phẩm len</a>
+                </a>
+                <a class="w-full flex justify-between items-center py-3 border-b" href="www">
+                    <p class="hover:underline text-sm">Bông tẩy trang</p>
                     <i class="fa-solid fa-angle-right"></i>
-                </div>
-                <div class="w-full flex justify-between items-center py-3 border-b">
-                    <a class="hover:underline text-sm" href="">Sản phẩm len</a>
+                </a>
+                <a class="w-full flex justify-between items-center py-3 border-b" href="www">
+                    <p class="hover:underline text-sm">Sản phẩm len</p>
                     <i class="fa-solid fa-angle-right"></i>
-                </div>
-                <div class="w-full flex justify-between items-center py-3 border-b">
-                    <a class="hover:underline text-sm" href="">Sản phẩm len</a>
+                </a>
+                <a class="w-full flex justify-between items-center py-3 border-b" href="www">
+                    <p class="hover:underline text-sm">Khẩu trang</p>
                     <i class="fa-solid fa-angle-right"></i>
-                </div>
+                </a>
                 <div class="w-fit mx-auto text-sm mt-7">
                     <a class="hover:underline text-gray-600" href="">Xem thêm</a>
                 </div>
