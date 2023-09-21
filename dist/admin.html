@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="flex">
+        <div class="bg-MyPink w-2/12 h-screen py-5 relative">
+            <div class="text-5xl text-MydarkYellow font-bold w-fit pt-2 mb-14 mx-auto">moho<span class="text-black">.</span></div>
+            <div class="flex flex-col gap-3">
+                <a href="" class="flex gap-2 text-base items-center justify-center py-4 bg-white">
+                    <i class="text-MydarkYellow fa-solid fa-house"></i>
+                    <p>Tổng thể</p>
+                </a>
+                <a href="" class="flex gap-2 text-base items-center justify-center py-4">
+                    <i class="text-MydarkYellow fa-solid fa-boxes-stacked"></i>
+                    <p>Thể loại</p>
+                </a>
+                <a href="" class="flex gap-2 text-base items-center justify-center py-4">
+                    <i class="text-MydarkYellow fa-solid fa-box-open"></i>
+                    <p>Sản phẩm</p>
+                </a>
+                <a href="" class="flex gap-2 text-base items-center justify-center py-4">
+                    <i class="text-MydarkYellow fa-solid fa-receipt"></i>
+                    <p>Đơn đặt hàng</p>
+                </a>
+            </div>
+            <a href="" class="flex gap-2 text-lg absolute bottom-7 left-16 items-center">
+                <i class="text-MydarkYellow fa-solid fa-reply-all"></i>
+                <p>Đăng xuất</p>
+            </a>
+        </div>
+
+
+        <div class="w-full p-10">
+            <div class="flex items-center justify-between">
+                <div class="w-full md:w-2/5 relative border border-gray-300">
+                    <input class="w-full outline-none py-2 px-4 rounded-sm" type="text">
+                    <div class="absolute top-0 right-0 h-full w-14 lg:w-20 border-4 border-white bg-MyPink flex justify-center items-center hover:cursor-pointer hover:bg-MydarkYellow">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <img class="w-12 h-12 object-cover rounded-full" src="/assets/btt1.jpg" alt="">
+            </div>
+
+            <div class="mt-10 flex justify-end">
+                <label for="addProduct" class="py-2 px-5 border rounded-md border-MydarkYellow hover:bg-MydarkYellow hover:text-white hover:cursor-pointer">
+                    Thêm sản phẩm
+                </label>
+            </div>
+
+            <div>
+                <input hidden type="checkbox" id="addProduct" class="">
+                <div for="addProduct" class="h-fit addProduct-form w-fit px-10 py-7 fixed top-0 bottom-0 left-[25%] z-20 bg-MyPink rounded-xl">
+                    <p class="text-2xl font-bold w-fit mx-auto text-MydarkYellow mb-3">Thêm sản phẩm</p>
+                    <form action="">
+                        <div class="flex gap-5">
+                            <div class="w-[200px]">
+                                <div>
+                                    <label class="text-gray-600 text-sm" for="">Tên sản phẩm</label>
+                                    <input class="text-sm border border-gray-300 p-2 my-1 w-full focus:border-MydarkYellow focus:outline-none" type="text">
+                                </div>
+                                <div class="flex flex-col">
+                                    <label class="text-gray-600 text-sm" for="">Loại</label>
+                                    <select name="" id="" class="p-2 border border-gray-300 focus:border-MydarkYellow focus:outline-none">
+                                        <option value="">1</option>
+                                        <option value="">1</option>
+                                        <option value="">1</option>
+                                        <option value="">1</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="text-gray-600 text-sm" for="">Giá</label>
+                                    <input class="text-sm border border-gray-300 p-2 my-1 w-full focus:border-MydarkYellow focus:outline-none" type="number">
+                                </div>
+                                <div>
+                                    <label class="text-gray-600 text-sm" for="">Giá gốc</label>
+                                    <input class="text-sm border border-gray-300 p-2 my-1 w-full focus:border-MydarkYellow focus:outline-none" type="number">
+                                </div>
+                                <div class="flex flex-col">
+                                    <label class="text-gray-600 text-sm" for="">Hình ảnh</label>
+                                    <input class="text-sm" type="file" multiple>
+                                </div>
+                            </div>
+    
+                            <div class="w-[500px]">
+                                <div>
+                                    <label class="text-gray-600 text-sm" for="">Mô tả ngắn</label>
+                                    <textarea rows="3" class="text-sm border border-gray-300 p-2 my-1 w-full focus:border-MydarkYellow focus:outline-none resize-none"></textarea>
+                                </div>
+                                <div>
+                                    <label class="text-gray-600 text-sm" for="">Chi tiết sản phẩm</label>
+                                    <textarea rows="10" class="text-sm border border-gray-300 p-2 my-1 w-full focus:border-MydarkYellow focus:outline-none resize-none"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-fit mx-auto mt-5">
+                            <button class="py-2 px-6 rounded-lg bg-MydarkYellow text-white hover:bg-black hover:text-MydarkYellow">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <label hidden for="addProduct" class="bg-gray-600 opacity-50 fixed top-0 left-0 right-0 bottom-0 addProduct-overlay z-10"></label>
+            </div>
+            
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-5">
+                <table class="w-full text-sm text-left text-gray-500 ">
+                    <thead class="text-sm text-gray-700 uppercase bg-gray-50 ">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Ảnh
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Tên
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Loại
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Giá
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Giá gốc
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Mô tả ngắn
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Update
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Delete
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b">
+                            <td class="px-6 py-3 w-32">
+                                <img class="w-20 h-20 object-cover" src="/assets/btt1.jpg" alt="">
+                            </td>
+                            <td class="px-6 py-3 text-black font-medium">
+                                Khăn ướt Gumi - 100 tờ
+                            </td>
+                            <td class="px-6 py-3">
+                                Khăn ướt
+                            </td>
+                            <td class="px-6 py-3">
+                                23000
+                            </td>
+                            <td class="px-6 py-3">
+                                25000
+                            </td>
+                            <td class="px-6 py-3 w-2/6">
+                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available
+                            </td>
+                            <td class="px-6 py-3 w-10 text-center">
+                                <a href="#" class="font-medium text-blue-600"><i class="fa-solid fa-pen-to-square"></i></a>
+                            </td>
+                            <td class="px-6 py-3 w-10 text-center">
+                                <a href="#" class="font-medium text-red-600"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

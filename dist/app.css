@@ -45,6 +45,15 @@ body {
 .active {
     display: block;
 }
+#addProduct:checked ~ .addProduct-overlay {
+    display: block;
+}
+.addProduct-form {
+    transform: translateY(-100%);
+}
+#addProduct:checked ~ .addProduct-form {
+    transform: translateY(10%);
+}
 @media (max-height: 650px) { 
     .vision__img {
         height: 500px;
